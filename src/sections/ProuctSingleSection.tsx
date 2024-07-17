@@ -94,8 +94,9 @@ export function ProductSingleSection(props: DataProps<typeof fetchProductSingleS
         <div className="flex flex-col rounded-lg shadow-sm md:flex-row md:space-x-8">
           <div className="md:basis-6/12 ">
             <div className="h-full w-full overflow-hidden rounded-lg bg-gray-200">
-              {props.data.images.nodes.map((node) => (
+              {props.data.images.nodes.map((node, index) => (
                 <NextImage
+                  key={index}
                   src={node.url}
                   alt={node.altText || ''}
                   width={node.width}
