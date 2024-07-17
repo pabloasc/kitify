@@ -59,7 +59,7 @@ First, you need to set the below environment variables in the `.env` file or you
 - `NEXT_PUBLIC_SHOPIFY_STOREFRONT_API_VERSION`
 
 You can follow the [Shopify Storefront GraphQL API](https://shopify.dev/api/storefront/getting-started) documentation to get Storefront API information.
-
+nvm 
 ### Develop
 
 Develop the project in development mode.

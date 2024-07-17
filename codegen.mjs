@@ -10,7 +10,7 @@ const storefrontApiVersion = process.env.NEXT_PUBLIC_SHOPIFY_STOREFRONT_API_VERS
 const apiEndpoint = storeDomain + `/api/${storefrontApiVersion}/graphql.json`;
 
 execSync(
-  `node_modules/.bin/zeus ${apiEndpoint} ./src/utilities/storefront --header=X-Shopify-Storefront-Access-Token:${publicStorefrontToken}`,
+  `zeus ${apiEndpoint} ./src/utilities/storefront --header=X-Shopify-Storefront-Access-Token:${publicStorefrontToken}`,
   {
     stdio: 'inherit',
   }
